@@ -9,7 +9,7 @@ import type { CartItem } from "../../lib/types.ts";
 
 function ProductDetails() {
   const { productId } = useParams();
-  const catalog = useContext(CatalogContext);
+  const { catalog } = useContext(CatalogContext);
   const cart = useContext(CartContext);
   const product = catalog.find((product) => product.productId === productId);
   console.log({ product });
