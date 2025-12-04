@@ -1,0 +1,7 @@
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: start;
+    justify-content: start;
+}

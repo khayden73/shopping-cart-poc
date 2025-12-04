@@ -1,0 +1,11 @@
+.products-list {
+    width: 100%;
+    background-color: lawngreen;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    padding: 1rem;
+    margin: 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+}
