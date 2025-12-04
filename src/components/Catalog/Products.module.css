@@ -9,3 +9,31 @@
     border: 1px solid #aaaaaa;
     border-radius: 8px;
 }
+
+.product-category-filter {
+
+    ul {
+        margin: 1ch 0;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+
+        li {
+
+            button {
+                cursor: pointer;
+                padding: 0.1rem 0.5rem;
+                background-color: #efefef;
+                border-radius: 8px;
+                font-size: 0.8rem;
+                text-transform: lowercase;
+            }
+
+            button.selected {
+                background-color: #000000;
+                color: #ffffff;
+            }
+
+        }
+    }
+}
