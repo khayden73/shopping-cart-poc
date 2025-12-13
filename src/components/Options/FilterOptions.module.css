@@ -1,0 +1,15 @@
+.filter-options-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .options-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.5rem 0.25rem;
+    }
+
+}

@@ -25,10 +25,10 @@ const CartContext = createContext<CartContextType>({
 });
 
 const CartProvider = ({ children }: CartProviderProps) => {
-  const [ cartItems, setCartItems ] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const addToCart = (item: CartItem) => {
-    setCartItems([ ...cartItems, item ]);
+    setCartItems([...cartItems, item]);
   };
 
   const removeFromCart = (productId: string) => {
@@ -41,9 +41,11 @@ const CartProvider = ({ children }: CartProviderProps) => {
     setCartItems([]);
   };
 
-  const getNumItems = () => cartItems.length;
+  const getNumItems = () =>
+    cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
-  const getTotal = () => cartItems.reduce((acc, item) => acc + item.price, 0);
+  const getTotal = () =>
+    cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const cartValue = {
     cartItems,

@@ -1,55 +1,43 @@
 import { useContext, useEffect, useState } from "react";
 import { CatalogContext } from "./CatalogProvider.tsx";
-import Styles from "./Products.module.css";
-import { ProductCard } from "./ProductCard.tsx";
+import styles from "./Products.module.css";
 import type { Product } from "../../lib/types.ts";
+import { FilterOptions } from "../Options/FilterOptions.tsx";
+import { ProductList } from "./ProductList.tsx";
 
 function Products() {
   const { catalog, isLoading, getCategories } = useContext(CatalogContext);
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>(catalog);
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    if (!isLoading && catalog.length > 0) {
+      setFilteredProducts(catalog);
+    }
+  }, [catalog, isLoading]);
 
   if (isLoading) return <p>Loading...</p>;
 
   const handleCategorySelection = (category: string) => {
-    if (category === selectedCategory) {
-      setSelectedCategory("");
-    } else {
-      setSelectedCategory(category);
-    }
-  };
-
-  useEffect(() => {
-    if (selectedCategory === "") {
+    if (category === "") {
       setFilteredProducts(catalog);
     } else {
       setFilteredProducts(
-        catalog.filter((product) => product.category === selectedCategory),
+        catalog.filter((product) => product.category === category),
       );
     }
-  }, [selectedCategory]);
+  };
 
   return (
     <>
       <h2>Products</h2>
-      <div className={Styles.productCategoryFilter}>
-        <ul>
-          {getCategories().map((category) => (
-            <li key={category}>
-              <button
-                className={category === selectedCategory ? Styles.selected : ""}
-                onClick={() => handleCategorySelection(category)}
-              >
-                {category}
-              </button>
-            </li>
-          ))}
-        </ul>
+      <div className={styles.productCategoryFilter}>
+        <FilterOptions
+          options={getCategories()}
+          onSelect={handleCategorySelection}
+        />
       </div>
-      <div className={Styles.productsList}>
-        {filteredProducts.map((product) => (
-          <ProductCard key={product.productId} product={product} />
-        ))}
+      <div className={styles.productsListWrapper}>
+        <ProductList products={filteredProducts} />
       </div>
     </>
   );

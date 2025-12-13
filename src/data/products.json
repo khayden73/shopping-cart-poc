@@ -5,20 +5,9 @@
     "category": "T-Shirts",
     "price": 24.99,
     "inventory": 150,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Navy",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
+    "colorOptions": ["White", "Black", "Navy", "Gray"],
+    "sizeOptions": ["XS", "S", "M", "L", "XL", "XXL"],
+    "image": "t-shirt-1.png"
   },
   {
     "productId": "HD001",
@@ -26,17 +15,8 @@
     "category": "Hoodies",
     "price": 49.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Black", "Gray", "Navy"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "PT001",
@@ -44,18 +24,8 @@
     "category": "Pants",
     "price": 59.99,
     "inventory": 75,
-    "colorOptions": [
-      "Khaki",
-      "Navy",
-      "Black"
-    ],
-    "sizeOptions": [
-      "28",
-      "30",
-      "32",
-      "34",
-      "36"
-    ]
+    "colorOptions": ["Khaki", "Navy", "Black"],
+    "sizeOptions": ["28", "30", "32", "34", "36"]
   },
   {
     "productId": "SK001",
@@ -63,16 +33,8 @@
     "category": "Socks",
     "price": 12.99,
     "inventory": 200,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
-    ]
+    "colorOptions": ["White", "Black", "Gray"],
+    "sizeOptions": ["S", "M", "L"]
   },
   {
     "productId": "UW001",
@@ -80,17 +42,8 @@
     "category": "Underwear",
     "price": 19.99,
     "inventory": 150,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Black", "Gray", "Navy"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "HT001",
@@ -98,14 +51,8 @@
     "category": "Hats",
     "price": 24.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Navy",
-      "Red"
-    ],
-    "sizeOptions": [
-      "One Size"
-    ]
+    "colorOptions": ["Black", "Navy", "Red"],
+    "sizeOptions": ["One Size"]
   },
   {
     "productId": "TS002",
@@ -113,18 +60,9 @@
     "category": "T-Shirts",
     "price": 22.99,
     "inventory": 120,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["White", "Black", "Gray"],
+    "sizeOptions": ["XS", "S", "M", "L", "XL"],
+    "image": "t-shirt-1.png"
   },
   {
     "productId": "HD002",
@@ -132,17 +70,8 @@
     "category": "Hoodies",
     "price": 44.99,
     "inventory": 85,
-    "colorOptions": [
-      "Gray",
-      "Black",
-      "Green"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Gray", "Black", "Green"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "PT002",
@@ -150,17 +79,8 @@
     "category": "Pants",
     "price": 64.99,
     "inventory": 60,
-    "colorOptions": [
-      "Olive",
-      "Khaki",
-      "Black"
-    ],
-    "sizeOptions": [
-      "30",
-      "32",
-      "34",
-      "36"
-    ]
+    "colorOptions": ["Olive", "Khaki", "Black"],
+    "sizeOptions": ["30", "32", "34", "36"]
   },
   {
     "productId": "SK002",
@@ -168,15 +88,8 @@
     "category": "Socks",
     "price": 9.99,
     "inventory": 250,
-    "colorOptions": [
-      "White",
-      "Black"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
-    ]
+    "colorOptions": ["White", "Black"],
+    "sizeOptions": ["S", "M", "L"]
   },
   {
     "productId": "UW002",
@@ -184,17 +97,8 @@
     "category": "Underwear",
     "price": 16.99,
     "inventory": 180,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["White", "Black", "Gray"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "HT002",
@@ -202,14 +106,8 @@
     "category": "Hats",
     "price": 19.99,
     "inventory": 120,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "One Size"
-    ]
+    "colorOptions": ["Black", "Gray", "Navy"],
+    "sizeOptions": ["One Size"]
   },
   {
     "productId": "TS003",
@@ -217,17 +115,8 @@
     "category": "T-Shirts",
     "price": 29.99,
     "inventory": 90,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["White", "Black", "Navy"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "HD003",
@@ -235,16 +124,8 @@
     "category": "Hoodies",
     "price": 79.99,
     "inventory": 50,
-    "colorOptions": [
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Black", "Gray"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "PT003",
@@ -252,18 +133,8 @@
     "category": "Pants",
     "price": 49.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Black", "Gray", "Navy"],
+    "sizeOptions": ["XS", "S", "M", "L", "XL"]
   },
   {
     "productId": "SK003",
@@ -271,15 +142,8 @@
     "category": "Socks",
     "price": 14.99,
     "inventory": 150,
-    "colorOptions": [
-      "Black",
-      "White"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
-    ]
+    "colorOptions": ["Black", "White"],
+    "sizeOptions": ["S", "M", "L"]
   },
   {
     "productId": "UW003",
@@ -287,16 +151,8 @@
     "category": "Underwear",
     "price": 24.99,
     "inventory": 120,
-    "colorOptions": [
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Black", "Gray"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   },
   {
     "productId": "HT003",
@@ -304,15 +160,8 @@
     "category": "Hats",
     "price": 29.99,
     "inventory": 80,
-    "colorOptions": [
-      "Black",
-      "Khaki",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S/M",
-      "L/XL"
-    ]
+    "colorOptions": ["Black", "Khaki", "Navy"],
+    "sizeOptions": ["S/M", "L/XL"]
   },
   {
     "productId": "TS004",
@@ -320,17 +169,9 @@
     "category": "T-Shirts",
     "price": 27.99,
     "inventory": 100,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["White", "Black", "Gray"],
+    "sizeOptions": ["S", "M", "L", "XL"],
+    "image": "t-shirt-1.png"
   },
   {
     "productId": "HD004",
@@ -338,16 +179,7 @@
     "category": "Hoodies",
     "price": 39.99,
     "inventory": 75,
-    "colorOptions": [
-      "Gray",
-      "Black",
-      "Blue"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "colorOptions": ["Gray", "Black", "Blue"],
+    "sizeOptions": ["S", "M", "L", "XL"]
   }
 ]
