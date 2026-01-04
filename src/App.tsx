@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={theme.config}>
       <CssBaseline />
-      <Box sx={{ padding: "0", marginTop: "30px" }}>
+      <Box sx={{ padding: "0", paddingTop: "64px" }}>
         <CatalogProvider>
           <CartProvider>
             <SideNav />
