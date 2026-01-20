@@ -1,6 +1,6 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useMemo, useState } from "react";
 // import ProductList from '../../data/products.json';
-import { type Product } from "../../lib/types.ts";
+import { type Product, type ProductsByCategory } from "../../lib/types.ts";
 import { getCatalog } from "../../data/catalog.ts";
 
 interface CatalogProviderProps {
@@ -12,7 +12,7 @@ interface CatalogContextType {
   categories: string[];
   isLoading: boolean;
   getCategories: () => string[];
-  getItemsByCategory: (maxPerCategory?: number) => Product[];
+  getItemsByCategory: () => ProductsByCategory;
 }
 
 const initialState: CatalogContextType = {
@@ -20,7 +20,7 @@ const initialState: CatalogContextType = {
   categories: [],
   isLoading: true,
   getCategories: () => [],
-  getItemsByCategory: () => [],
+  getItemsByCategory: () => new Map(),
 };
 
 const CatalogContext = createContext<CatalogContextType>(initialState);
@@ -33,6 +33,7 @@ const CatalogProvider = ({ children }: CatalogProviderProps) => {
   useEffect(() => {
     if (catalog.length === 0) {
       getCatalog().then((data) => {
+        console.log({ data });
         setCatalog(data as Product[]);
         setIsLoading(false);
         setCategories(getCategories());
@@ -49,28 +50,30 @@ const CatalogProvider = ({ children }: CatalogProviderProps) => {
   };
 
   const getItemsByCategory = (maxPerCategory = 1) => {
+    console.info("[getItemsByCategory]", { catalog });
     if (catalog.length > 0) {
-      return Array.from(
-        catalog.reduce((acc, item) => {
-          if (!acc.has(item.category)) {
-            acc.set(item.category, [item]);
-          } else if (acc.get(item.category).length < maxPerCategory) {
-            acc.get(item.category)?.push(item);
-          }
-          return acc;
-        }, new Map()),
-      );
+      return catalog.reduce((acc, item) => {
+        if (!acc.has(item.category)) {
+          acc.set(item.category, [item]);
+        } else if (acc.get(item.category).length < maxPerCategory) {
+          acc.get(item.category)?.push(item);
+        }
+        return acc;
+      }, new Map());
     }
-    return [];
+    return new Map();
   };
 
-  const ProviderProps = {
-    catalog,
-    categories,
-    isLoading,
-    getCategories,
-    getItemsByCategory,
-  };
+  const ProviderProps = useMemo(
+    () => ({
+      catalog,
+      categories,
+      isLoading,
+      getCategories,
+      getItemsByCategory,
+    }),
+    [catalog, categories, isLoading],
+  );
 
   return (
     <CatalogContext.Provider value={ProviderProps}>

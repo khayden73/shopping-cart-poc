@@ -41,7 +41,7 @@ function FilterOptions({
           options.map((option) => (
             <span key={option}>
               <Chip
-                icon={option === selected ? <CheckIcon /> : <></>}
+                icon={option === selected ? <CheckIcon /> : <span></span>}
                 color="primary"
                 label={option}
                 size="small"

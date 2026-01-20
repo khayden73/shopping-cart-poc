@@ -2,27 +2,35 @@ import { CatalogContext } from "./Catalog/CatalogProvider.tsx";
 import { useContext, useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import styles from "./Catalog/Products.module.css";
-import { ProductList } from "./Catalog/ProductList.tsx";
-import type { Product } from "../lib/types.ts";
+import type { ProductsByCategory } from "../lib/types.ts";
+import { ProductByCategoryList } from "./Catalog/ProductByCategoryList.tsx";
+
 function Home() {
   const { catalog, isLoading, getItemsByCategory } = useContext(CatalogContext);
-  const [productsByCategory, setProductsByCategory] = useState<Product[]>([]);
+  const [productsByCategory, setProductsByCategory] =
+    useState<ProductsByCategory | null>(null);
 
   useEffect(() => {
     if (!isLoading && catalog.length > 0) {
-      setProductsByCategory(getItemsByCategory());
+      const itemsByCategory = getItemsByCategory();
+      console.info("[Home]", { itemsByCategory });
+      setProductsByCategory(itemsByCategory);
     }
-  });
+  }, [isLoading, catalog]);
 
   return (
     <>
-      <h1>Home</h1>
+      <header className="page-header">
+        <h1>Home</h1>
+      </header>
       <Box>
         {isLoading ? (
           <p>Loading...</p>
         ) : (
           <div className={styles.productsListWrapper}>
-            <ProductList products={productsByCategory} />
+            {productsByCategory && (
+              <ProductByCategoryList products={productsByCategory} />
+            )}
           </div>
         )}
       </Box>

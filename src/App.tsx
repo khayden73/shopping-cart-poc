@@ -9,6 +9,8 @@ import { Outlet } from "react-router-dom";
 import { DEFAULT_THEME } from "./config/themes.ts";
 import { getThemeById } from "./services/themeService.ts";
 import { SideNav } from "./components/Shell/SideNav.tsx";
+import { PageHeader } from "./components/Shell/PageHeader.tsx";
+import { PageProvider } from "./components/Page/PageProvider.tsx";
 
 function App() {
   const theme = getThemeById(DEFAULT_THEME);
@@ -19,10 +21,14 @@ function App() {
       <Box sx={{ padding: "0", paddingTop: "64px" }}>
         <CatalogProvider>
           <CartProvider>
-            <SideNav />
-            <main>
-              <Outlet />
-            </main>
+            <PageProvider>
+              <SideNav />
+              <PageHeader />
+              <main>
+                <Outlet />
+              </main>
+              <footer>Footer</footer>
+            </PageProvider>
           </CartProvider>
         </CatalogProvider>
       </Box>

@@ -55,3 +55,5 @@ export type CartItem = {
   color?: string | ColorOption;
   size?: string | SizeOption;
 };
+
+export type ProductsByCategory = Map<string, Product[]>;

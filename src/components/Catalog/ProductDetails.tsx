@@ -1,27 +1,37 @@
 import { Link, useParams } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CatalogContext } from "./CatalogProvider.tsx";
 import { ProductOptions } from "./ProductOptions.tsx";
 import styles from "./ProductDetails.module.css";
 import { Quantity } from "./Quantity.tsx";
 import { CartContext } from "../Cart/CartProvider.tsx";
 import type { CartItem, Product } from "../../lib/types.ts";
+import { PageContext } from "../Page/PageProvider.tsx";
 
 function ProductDetails() {
   const [quantity, setQuantity] = useState(1);
   const { productId } = useParams();
   const { catalog } = useContext(CatalogContext);
   const cart = useContext(CartContext);
+  const { updateTitle, updateBreadcrumbs } = useContext(PageContext);
   const product =
     catalog.find((product) => product.productId === productId) ||
     ({} as Product);
 
-  const { image } = product;
+  const { image, name } = product;
   const imagePath = image
     ? `/public/products/${image}`
     : "/public/products/no-image-icon-15.png";
 
+  useEffect(() => {
+    if (product) {
+      updateTitle(name);
+      updateBreadcrumbs([{ label: "Back to Products", route: "/products" }]);
+    }
+  }, [updateTitle, updateBreadcrumbs]);
+
   if (!product) return null;
+
   // thing
   const addButtonHandler = (event: React.MouseEvent) => {
     event.preventDefault();
