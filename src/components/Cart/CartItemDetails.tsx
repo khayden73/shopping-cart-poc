@@ -1,4 +1,5 @@
 import type { CartItem } from "../../lib/types.ts";
+import styles from "./CartItemDetails.module.css";
 
 interface CartItemDetailsProps {
   item: CartItem;
@@ -7,7 +8,7 @@ interface CartItemDetailsProps {
 //
 function CartItemDetails({ item, removeFromCart }: CartItemDetailsProps) {
   return (
-    <div>
+    <div className={styles.cartItemDetails}>
       <p>{item.name}</p>
       <p>${item.price}</p>
       <p>Quantity: {item.quantity}</p>

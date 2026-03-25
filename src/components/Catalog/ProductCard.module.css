@@ -22,7 +22,12 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 8px;
-    background-color: #535bf277;
+    /*background-color: #535bf277;*/
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .actions {
