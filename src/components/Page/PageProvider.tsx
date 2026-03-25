@@ -1,10 +1,9 @@
-import { createContext, useMemo, useState } from "react";
+import { createContext, useCallback, useMemo, useState } from "react";
+import type { Breadcrumb } from "../../lib/types.ts";
 
 interface PageProviderProps {
   children: React.ReactNode;
 }
-
-type Breadcrumb = { label: string; route: string };
 
 interface PageContextType {
   title: string;
@@ -26,8 +25,11 @@ const PageProvider = ({ children }: PageProviderProps) => {
   const [title, setTitle] = useState(initialState.title);
   const [breadcrumbs, setBreadcrumbs] = useState<Breadcrumb[]>([]);
 
-  const updateTitle = (title: string) => setTitle(title);
-  const updateBreadcrumbs = setBreadcrumbs;
+  const updateTitle = useCallback((title: string) => setTitle(title), []);
+  const updateBreadcrumbs = useCallback(
+    (breadcrumbs: Breadcrumb[]) => setBreadcrumbs(breadcrumbs),
+    [],
+  );
 
   const providerProps = useMemo(
     () => ({

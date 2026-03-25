@@ -19,7 +19,7 @@ body {
 
 main {
     width: 100%;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     /*grid-template-columns: minmax(200px, 1fr) 200px;*/
     grid-template-rows: 60px 150px auto;
     gap: 2rem;
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 100%;
 
     /*header {*/
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
     main {
         width: 100%;
-        background-color: pink;
+        /*background-color: pink;*/
     }
 
     p {

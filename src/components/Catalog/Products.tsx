@@ -4,10 +4,15 @@ import styles from "./Products.module.css";
 import type { Product } from "../../lib/types.ts";
 import { FilterOptions } from "../Options/FilterOptions.tsx";
 import { ProductList } from "./ProductList.tsx";
+import { PageContext } from "../Page/PageProvider.tsx";
 
 function Products() {
   const { catalog, isLoading, getCategories } = useContext(CatalogContext);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const { updateTitle } = useContext(PageContext);
+
+  updateTitle("Products");
+  // updateBreadcrumbs([{ label: "Products" }]);
 
   useEffect(() => {
     if (!isLoading && catalog.length > 0) {
@@ -29,7 +34,7 @@ function Products() {
 
   return (
     <>
-      <h2>Products</h2>
+      {/*<h2>Products</h2>*/}
       <div className={styles.productCategoryFilter}>
         <FilterOptions
           options={getCategories()}

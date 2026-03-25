@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { CatalogContext } from "./CatalogProvider.tsx";
 import { ProductOptions } from "./ProductOptions.tsx";
@@ -18,15 +18,18 @@ function ProductDetails() {
     catalog.find((product) => product.productId === productId) ||
     ({} as Product);
 
-  const { image, name } = product;
+  const { image } = product;
   const imagePath = image
     ? `/public/products/${image}`
     : "/public/products/no-image-icon-15.png";
 
   useEffect(() => {
     if (product) {
-      updateTitle(name);
-      updateBreadcrumbs([{ label: "Back to Products", route: "/products" }]);
+      updateTitle(product.category);
+      updateBreadcrumbs([
+        { label: "Products", route: "/products" },
+        { label: product.category },
+      ]);
     }
   }, [updateTitle, updateBreadcrumbs]);
 
@@ -46,26 +49,23 @@ function ProductDetails() {
   };
 
   return (
-    <>
-      <Link to="/">&lt;&lt; Back to Products</Link>
-      <div className={styles.productWrapper}>
-        <figure className={styles.productImage}>
-          <img src={imagePath} alt={product.name} />
-        </figure>
-        <section className={styles.details}>
-          <h2>{product?.name}</h2>
-          <p>Price: ${product.price}</p>
-          <section>
-            <ProductOptions label="colors" options={product.colorOptions} />
-            <ProductOptions label="sizes" options={product.sizeOptions} />
-            <Quantity onChange={(quantity) => setQuantity(quantity)} />
-          </section>
-          <button onClick={addButtonHandler} className={styles.addToCart}>
-            Add
-          </button>
+    <div className={styles.productWrapper}>
+      <figure className={styles.productImage}>
+        <img src={imagePath} alt={product.name} />
+      </figure>
+      <section className={styles.details}>
+        <h2>{product?.name}</h2>
+        <p>Price: ${product.price}</p>
+        <section>
+          <ProductOptions label="colors" options={product.colorOptions} />
+          <ProductOptions label="sizes" options={product.sizeOptions} />
+          <Quantity onChange={(quantity) => setQuantity(quantity)} />
         </section>
-      </div>
-    </>
+        <button onClick={addButtonHandler} className={styles.addToCart}>
+          Add
+        </button>
+      </section>
+    </div>
   );
 }
 

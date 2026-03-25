@@ -57,3 +57,5 @@ export type CartItem = {
 };
 
 export type ProductsByCategory = Map<string, Product[]>;
+
+export type Breadcrumb = { label: string; route?: string };

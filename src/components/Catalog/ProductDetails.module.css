@@ -1,9 +1,9 @@
 .product-wrapper {
-    /*border: 1px solid #000000;*/
-    /*border-radius: 8px;*/
+    border: 1px solid #00000055;
+    border-radius: 8px;
     padding: 1rem;
-    margin: 0;
-    width: 100%;
+    margin: 0 3rem;
+    width: calc(100% - 6rem);
     display: flex;
     gap: 1rem;
 
@@ -38,7 +38,9 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 8px;
-    border: 1px solid #000000;
-    background-color: white;
+    border: 1px solid #00000022;
+    padding: 1rem;
+    /*background-color: white;*/
     /*background-color: #535bf277;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

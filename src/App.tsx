@@ -27,7 +27,7 @@ function App() {
               <main>
                 <Outlet />
               </main>
-              <footer>Footer</footer>
+              {/*<footer>Footer</footer>*/}
             </PageProvider>
           </CartProvider>
         </CatalogProvider>

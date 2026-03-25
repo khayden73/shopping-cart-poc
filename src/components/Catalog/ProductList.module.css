@@ -1,6 +1,6 @@
 .products-list {
     width: 100%;
-    background-color: lawngreen;
+    /*background-color: lawngreen;*/
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
