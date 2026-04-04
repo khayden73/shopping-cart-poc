@@ -1,0 +1,373 @@
+[
+  {
+    "productId": "TS001",
+    "name": "Classic Crew Neck T-Shirt",
+    "category": "T-Shirts",
+    "price": 24.99,
+    "inventory": 150,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Navy",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "image": "classic-crew-neck-t-shirt.png"
+  },
+  {
+    "productId": "HD001",
+    "name": "Zip-Up Hoodie",
+    "category": "Hoodies",
+    "price": 49.99,
+    "inventory": 100,
+    "colorOptions": [
+      "Black",
+      "Gray",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "zip-up-hoodie.png"
+  },
+  {
+    "productId": "PT001",
+    "name": "Slim Fit Chinos",
+    "category": "Pants",
+    "price": 59.99,
+    "inventory": 75,
+    "colorOptions": [
+      "Khaki",
+      "Navy",
+      "Black"
+    ],
+    "sizeOptions": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "image": "slim-fit-chinos.png"
+  },
+  {
+    "productId": "SK001",
+    "name": "Athletic Crew Socks",
+    "category": "Socks",
+    "price": 12.99,
+    "inventory": 200,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "athletic-crew-socks.png"
+  },
+  {
+    "productId": "UW001",
+    "name": "Cotton Boxer Briefs",
+    "category": "Underwear",
+    "price": 19.99,
+    "inventory": 150,
+    "colorOptions": [
+      "Black",
+      "Gray",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "cotton-boxer-briefs.png"
+  },
+  {
+    "productId": "HT001",
+    "name": "Baseball Cap",
+    "category": "Hats",
+    "price": 24.99,
+    "inventory": 100,
+    "colorOptions": [
+      "Black",
+      "Navy",
+      "Red"
+    ],
+    "sizeOptions": [
+      "One Size"
+    ],
+    "image": "baseball-cap.png"
+  },
+  {
+    "productId": "TS002",
+    "name": "V-Neck T-Shirt",
+    "category": "T-Shirts",
+    "price": 22.99,
+    "inventory": 120,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "v-neck-t-shirt.png"
+  },
+  {
+    "productId": "HD002",
+    "name": "Pullover Hoodie",
+    "category": "Hoodies",
+    "price": 44.99,
+    "inventory": 85,
+    "colorOptions": [
+      "Gray",
+      "Black",
+      "Green"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "pullover-hoodie.png"
+  },
+  {
+    "productId": "PT002",
+    "name": "Cargo Pants",
+    "category": "Pants",
+    "price": 64.99,
+    "inventory": 60,
+    "colorOptions": [
+      "Olive",
+      "Khaki",
+      "Black"
+    ],
+    "sizeOptions": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "image": "cargo-pants.png"
+  },
+  {
+    "productId": "SK002",
+    "name": "No-Show Socks",
+    "category": "Socks",
+    "price": 9.99,
+    "inventory": 250,
+    "colorOptions": [
+      "White",
+      "Black"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "no-show-socks.png"
+  },
+  {
+    "productId": "UW002",
+    "name": "Cotton Briefs",
+    "category": "Underwear",
+    "price": 16.99,
+    "inventory": 180,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "cotton-briefs.png"
+  },
+  {
+    "productId": "HT002",
+    "name": "Beanie",
+    "category": "Hats",
+    "price": 19.99,
+    "inventory": 120,
+    "colorOptions": [
+      "Black",
+      "Gray",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "One Size"
+    ],
+    "image": "beanie.png"
+  },
+  {
+    "productId": "TS003",
+    "name": "Long Sleeve T-Shirt",
+    "category": "T-Shirts",
+    "price": 29.99,
+    "inventory": 90,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "long-sleeve-t-shirt.png"
+  },
+  {
+    "productId": "HD003",
+    "name": "Tech Fleece Hoodie",
+    "category": "Hoodies",
+    "price": 79.99,
+    "inventory": 50,
+    "colorOptions": [
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "tech-fleece-hoodie.png"
+  },
+  {
+    "productId": "PT003",
+    "name": "Athletic Joggers",
+    "category": "Pants",
+    "price": 49.99,
+    "inventory": 100,
+    "colorOptions": [
+      "Black",
+      "Gray",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "athletic-joggers.png"
+  },
+  {
+    "productId": "SK003",
+    "name": "Compression Socks",
+    "category": "Socks",
+    "price": 14.99,
+    "inventory": 150,
+    "colorOptions": [
+      "Black",
+      "White"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "compression-socks.png"
+  },
+  {
+    "productId": "UW003",
+    "name": "Performance Boxer Briefs",
+    "category": "Underwear",
+    "price": 24.99,
+    "inventory": 120,
+    "colorOptions": [
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "performance-boxer-briefs.png"
+  },
+  {
+    "productId": "HT003",
+    "name": "Bucket Hat",
+    "category": "Hats",
+    "price": 29.99,
+    "inventory": 80,
+    "colorOptions": [
+      "Black",
+      "Khaki",
+      "Navy"
+    ],
+    "sizeOptions": [
+      "S/M",
+      "L/XL"
+    ],
+    "image": "bucket-hat.png"
+  },
+  {
+    "productId": "TS004",
+    "name": "Graphic T-Shirt",
+    "category": "T-Shirts",
+    "price": 27.99,
+    "inventory": 100,
+    "colorOptions": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "graphic-t-shirt.png"
+  },
+  {
+    "productId": "HD004",
+    "name": "Lightweight Hoodie",
+    "category": "Hoodies",
+    "price": 39.99,
+    "inventory": 75,
+    "colorOptions": [
+      "Gray",
+      "Black",
+      "Blue"
+    ],
+    "sizeOptions": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "image": "lightweight-hoodie.png"
+  }
+]
