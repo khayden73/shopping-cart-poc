@@ -1,18 +1,18 @@
 import type { Product } from "./types.ts";
-import type { SelectedOption } from "./types.ts";
+import type { ProductOption } from "./types.ts";
 
 class CartItem {
     product: Product;
     quantity = 0;
     discount = 0;
     total = 0;
-    selectedOptions: SelectedOption[];
+    ProductOptions: ProductOption[];
 
-    constructor(product: Product, quantity = 1, discount = 0, selectedOptions: SelectedOption[] = []) {
+    constructor(product: Product, quantity = 1, discount = 0, ProductOptions: ProductOption[] = []) {
         this.product = product;
         this.quantity = quantity;
         this.discount = discount;
-        this.selectedOptions = selectedOptions;
+        this.ProductOptions = ProductOptions;
     }
 
     getProduct() {
@@ -23,8 +23,16 @@ class CartItem {
         return this.product.productId;
     }
 
+    getPrice() {
+        return this.product.price
+    }
+
     getQuantity() {
         return this.quantity;
+    }
+
+    getDiscount() {
+        return this.discount;
     }
 
     getSubTotal() {

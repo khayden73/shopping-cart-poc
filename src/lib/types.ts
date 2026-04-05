@@ -47,7 +47,7 @@ export type Product = {
   image?: string;
 };
 
-export type SelectedOption = {
+export type ProductOption = {
   [key: string]: string | ColorOption | SizeOption;
 };
 
