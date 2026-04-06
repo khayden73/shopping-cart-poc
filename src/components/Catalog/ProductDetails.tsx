@@ -35,7 +35,7 @@ function ProductDetails() {
 
   if (!product) return null;
 
-  // thing
+  // TODO: add a success/error handler
   const addButtonHandler = (event: React.MouseEvent) => {
     event.preventDefault();
 
