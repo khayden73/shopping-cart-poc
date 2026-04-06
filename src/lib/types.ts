@@ -39,22 +39,24 @@ export enum ColorOption {
 export type Product = {
   productId: string;
   name: string;
-  category: string | Category;
+  category: Category;
   price: number;
   inventory: number;
-  colorOptions: string[] | ColorOption[];
-  sizeOptions: string[] | SizeOption[];
+  colorOptions: ColorOption[];
+  sizeOptions: SizeOption[];
   image?: string;
 };
 
-export type CartItem = {
-  productId: string;
-  name: string;
-  price: number;
-  quantity: number;
-  color?: string | ColorOption;
-  size?: string | SizeOption;
+export type ProductOption = {
+  [key: string]: string | ColorOption | SizeOption;
 };
+
+// export type CartItemDetails = {
+//   product: Product;
+//   quantity: number;
+//   discount: number;
+//   selectedOptions: SelectedOption[];
+// };
 
 export type ProductsByCategory = Map<string, Product[]>;
 

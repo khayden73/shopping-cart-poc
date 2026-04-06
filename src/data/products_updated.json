@@ -19,7 +19,7 @@
       "XL",
       "XXL"
     ],
-    "image": "t-shirt.svg"
+    "image": "classic-crew-neck-t-shirt.png"
   },
   {
     "productId": "HD001",
@@ -38,7 +38,7 @@
       "L",
       "XL"
     ],
-    "image": "hoodie.svg"
+    "image": "zip-up-hoodie.png"
   },
   {
     "productId": "PT001",
@@ -58,7 +58,7 @@
       "34",
       "36"
     ],
-    "image": "pants.svg"
+    "image": "slim-fit-chinos.png"
   },
   {
     "productId": "SK001",
@@ -76,7 +76,7 @@
       "M",
       "L"
     ],
-    "image": "socks.svg"
+    "image": "athletic-crew-socks.png"
   },
   {
     "productId": "UW001",
@@ -95,7 +95,7 @@
       "L",
       "XL"
     ],
-    "image": "underwear.svg"
+    "image": "cotton-boxer-briefs.png"
   },
   {
     "productId": "HT001",
@@ -111,7 +111,7 @@
     "sizeOptions": [
       "One Size"
     ],
-    "image": "baseball-cap.svg"
+    "image": "baseball-cap.png"
   },
   {
     "productId": "TS002",
@@ -131,7 +131,7 @@
       "L",
       "XL"
     ],
-    "image": "t-shirt.svg"
+    "image": "v-neck-t-shirt.png"
   },
   {
     "productId": "HD002",
@@ -150,7 +150,7 @@
       "L",
       "XL"
     ],
-    "image": "hoodie.svg"
+    "image": "pullover-hoodie.png"
   },
   {
     "productId": "PT002",
@@ -169,7 +169,7 @@
       "34",
       "36"
     ],
-    "image": "pants.svg"
+    "image": "cargo-pants.png"
   },
   {
     "productId": "SK002",
@@ -186,7 +186,7 @@
       "M",
       "L"
     ],
-    "image": "socks.svg"
+    "image": "no-show-socks.png"
   },
   {
     "productId": "UW002",
@@ -205,7 +205,7 @@
       "L",
       "XL"
     ],
-    "image": "underwear.svg"
+    "image": "cotton-briefs.png"
   },
   {
     "productId": "HT002",
@@ -221,7 +221,7 @@
     "sizeOptions": [
       "One Size"
     ],
-    "image": "beanie.svg"
+    "image": "beanie.png"
   },
   {
     "productId": "TS003",
@@ -240,7 +240,7 @@
       "L",
       "XL"
     ],
-    "image": "t-shirt.svg"
+    "image": "long-sleeve-t-shirt.png"
   },
   {
     "productId": "HD003",
@@ -258,7 +258,7 @@
       "L",
       "XL"
     ],
-    "image": "hoodie.svg"
+    "image": "tech-fleece-hoodie.png"
   },
   {
     "productId": "PT003",
@@ -278,7 +278,7 @@
       "L",
       "XL"
     ],
-    "image": "pants.svg"
+    "image": "athletic-joggers.png"
   },
   {
     "productId": "SK003",
@@ -295,7 +295,7 @@
       "M",
       "L"
     ],
-    "image": "socks.svg"
+    "image": "compression-socks.png"
   },
   {
     "productId": "UW003",
@@ -313,7 +313,7 @@
       "L",
       "XL"
     ],
-    "image": "underwear.svg"
+    "image": "performance-boxer-briefs.png"
   },
   {
     "productId": "HT003",
@@ -330,7 +330,7 @@
       "S/M",
       "L/XL"
     ],
-    "image": "baseball-cap.svg"
+    "image": "bucket-hat.png"
   },
   {
     "productId": "TS004",
@@ -349,7 +349,7 @@
       "L",
       "XL"
     ],
-    "image": "t-shirt.svg"
+    "image": "graphic-t-shirt.png"
   },
   {
     "productId": "HD004",
@@ -368,6 +368,6 @@
       "L",
       "XL"
     ],
-    "image": "hoodie.svg"
+    "image": "lightweight-hoodie.png"
   }
 ]

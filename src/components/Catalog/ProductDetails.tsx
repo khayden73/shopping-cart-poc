@@ -20,8 +20,8 @@ function ProductDetails() {
 
   const { image } = product;
   const imagePath = image
-    ? `/public/products/${image}`
-    : "/public/products/no-image-icon-15.png";
+    ? `/products/${image}`
+    : "/products/no-image-icon-15.png";
 
   useEffect(() => {
     if (product) {
