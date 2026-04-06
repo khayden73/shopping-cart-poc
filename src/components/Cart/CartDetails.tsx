@@ -4,7 +4,7 @@ import { CartItemDetails } from "./CartItemDetails.tsx";
 import styles from "./CartDetails.module.css";
 
 function CartDetails() {
-  const { cartItems, getNumItems, getSubTotal, removeFromCart, clearCart } =
+  const { cartItems, getNumItems, getSubTotal, clearCart } =
     useContext(CartContext);
   return (
     <div className={styles.cartDetailsWrapper}>
@@ -15,7 +15,7 @@ function CartDetails() {
           <button onClick={clearCart}>Clear Cart</button>
         </section>
         {Array.from(cartItems.entries()).map(([itemId, cartItem]) => (
-          <CartItemDetails key={itemId} removeFromCart={removeFromCart} itemId={itemId} cartItem={cartItem} />
+          <CartItemDetails key={itemId} itemId={itemId} cartItem={cartItem} />
         ))}
       </div>
     </div>

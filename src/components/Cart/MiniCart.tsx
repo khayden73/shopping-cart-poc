@@ -9,11 +9,22 @@ function MiniCart() {
   const Cart = useContext(CartContext);
   return (
     <div className={styles.miniCart}>
-      <Link to="/cart">
+      <IconButton
+        aria-label="go to shopping cart"
+        component={Link}
+        to="/cart"
+        sx={{
+          backgroundColor: 'primary.main',
+          color: 'white',
+          '&:hover': { backgroundColor: 'primary.dark' }
+        }}>
+        <ShoppingCartOutlined />
+      </IconButton>
+      {/* <Link to="/cart">
         <IconButton aria-label="cart" color="inherit">
           <ShoppingCartOutlined />
         </IconButton>
-      </Link>
+      </Link> */}
 
       <section className={styles.summary}>
         <span>{Cart.getNumItems()}</span>

@@ -4,10 +4,11 @@ import { type ChangeEvent } from "react";
 interface QuantityProps {
   start?: number;
   max?: number;
+  selected?: number;
   onChange?: (quantity: number) => void;
 }
 
-function Quantity({ start = 1, max = 10, onChange }: QuantityProps) {
+function Quantity({ start = 1, max = 10, selected = 1, onChange }: QuantityProps) {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     const newValue = Number(event.target.value);
@@ -22,7 +23,7 @@ function Quantity({ start = 1, max = 10, onChange }: QuantityProps) {
         type="number"
         min={start}
         max={max}
-        defaultValue={start}
+        defaultValue={start !== selected ? selected : start}
         onChange={handleChange}
       />
     </>

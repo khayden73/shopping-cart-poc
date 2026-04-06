@@ -15,6 +15,7 @@
 
     .product-details-wrapper {
         background-color: orchid;
+        flex: 1;
     }
 
     .product-thumb-container {
