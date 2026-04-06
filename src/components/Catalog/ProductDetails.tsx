@@ -39,13 +39,13 @@ function ProductDetails() {
   const addButtonHandler = (event: React.MouseEvent) => {
     event.preventDefault();
 
-    const item: CartItem = {
-      productId: product.productId,
-      quantity,
-      name: product.name,
-      price: product.price,
-    };
-    cart.addToCart(item);
+    // const item: CartItem = {
+    //   productId: product.productId,
+    //   quantity,
+    //   name: product.name,
+    //   price: product.price,
+    // };
+    cart.addToCart({ product, quantity, selectedOptions: [] });
   };
 
   return (

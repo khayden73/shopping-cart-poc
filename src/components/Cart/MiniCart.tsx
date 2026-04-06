@@ -17,7 +17,7 @@ function MiniCart() {
 
       <section className={styles.summary}>
         <span>{Cart.getNumItems()}</span>
-        <span>${Number(Cart.getTotal()).toFixed(2)}</span>
+        <span>${Number(Cart.getSubTotal()).toFixed(2)}</span>
       </section>
     </div>
   );

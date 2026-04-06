@@ -51,13 +51,25 @@ export type ProductOption = {
   [key: string]: string | ColorOption | SizeOption;
 };
 
-// export type CartItemDetails = {
-//   product: Product;
-//   quantity: number;
-//   discount: number;
-//   selectedOptions: SelectedOption[];
-// };
+export type CartItem = {
+  product: Product;
+  quantity: number;
+  selectedOptions?: ProductOption[];
+};
 
 export type ProductsByCategory = Map<string, Product[]>;
 
 export type Breadcrumb = { label: string; route?: string };
+
+
+export type AddToCartArgs = {
+  product: Product;
+  quantity: number;
+  selectedOptions: ProductOption[];
+}
+
+export type UpdateCartArgs = {
+  itemId: string;
+  quantity: number;
+  selectedOptions: ProductOption[];
+}
