@@ -5,19 +5,29 @@
     "category": "T-Shirts",
     "price": 24.99,
     "inventory": 150,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Navy",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Navy",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
     ],
     "image": "t-shirt.svg"
   },
@@ -27,16 +37,26 @@
     "category": "Hoodies",
     "price": 49.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "hoodie.svg"
   },
@@ -46,17 +66,27 @@
     "category": "Pants",
     "price": 59.99,
     "inventory": 75,
-    "colorOptions": [
-      "Khaki",
-      "Navy",
-      "Black"
-    ],
-    "sizeOptions": [
-      "28",
-      "30",
-      "32",
-      "34",
-      "36"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Khaki",
+          "Navy",
+          "Black"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "28",
+          "30",
+          "32",
+          "34",
+          "36"
+        ]
+      }
     ],
     "image": "pants.svg"
   },
@@ -66,15 +96,25 @@
     "category": "Socks",
     "price": 12.99,
     "inventory": 200,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L"
+        ]
+      }
     ],
     "image": "socks.svg"
   },
@@ -84,16 +124,26 @@
     "category": "Underwear",
     "price": 19.99,
     "inventory": 150,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "underwear.svg"
   },
@@ -103,13 +153,23 @@
     "category": "Hats",
     "price": 24.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Navy",
-      "Red"
-    ],
-    "sizeOptions": [
-      "One Size"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Navy",
+          "Red"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "One Size"
+        ]
+      }
     ],
     "image": "baseball-cap.svg"
   },
@@ -119,17 +179,27 @@
     "category": "T-Shirts",
     "price": 22.99,
     "inventory": 120,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "t-shirt.svg"
   },
@@ -139,16 +209,26 @@
     "category": "Hoodies",
     "price": 44.99,
     "inventory": 85,
-    "colorOptions": [
-      "Gray",
-      "Black",
-      "Green"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Gray",
+          "Black",
+          "Green"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "hoodie.svg"
   },
@@ -158,16 +238,26 @@
     "category": "Pants",
     "price": 64.99,
     "inventory": 60,
-    "colorOptions": [
-      "Olive",
-      "Khaki",
-      "Black"
-    ],
-    "sizeOptions": [
-      "30",
-      "32",
-      "34",
-      "36"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Olive",
+          "Khaki",
+          "Black"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "30",
+          "32",
+          "34",
+          "36"
+        ]
+      }
     ],
     "image": "pants.svg"
   },
@@ -177,14 +267,24 @@
     "category": "Socks",
     "price": 9.99,
     "inventory": 250,
-    "colorOptions": [
-      "White",
-      "Black"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L"
+        ]
+      }
     ],
     "image": "socks.svg"
   },
@@ -194,16 +294,26 @@
     "category": "Underwear",
     "price": 16.99,
     "inventory": 180,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "underwear.svg"
   },
@@ -213,13 +323,23 @@
     "category": "Hats",
     "price": 19.99,
     "inventory": 120,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "One Size"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "One Size"
+        ]
+      }
     ],
     "image": "beanie.svg"
   },
@@ -229,16 +349,26 @@
     "category": "T-Shirts",
     "price": 29.99,
     "inventory": 90,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "t-shirt.svg"
   },
@@ -248,15 +378,25 @@
     "category": "Hoodies",
     "price": 79.99,
     "inventory": 50,
-    "colorOptions": [
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "hoodie.svg"
   },
@@ -266,17 +406,27 @@
     "category": "Pants",
     "price": 49.99,
     "inventory": 100,
-    "colorOptions": [
-      "Black",
-      "Gray",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "pants.svg"
   },
@@ -286,14 +436,24 @@
     "category": "Socks",
     "price": 14.99,
     "inventory": 150,
-    "colorOptions": [
-      "Black",
-      "White"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "White"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L"
+        ]
+      }
     ],
     "image": "socks.svg"
   },
@@ -303,15 +463,25 @@
     "category": "Underwear",
     "price": 24.99,
     "inventory": 120,
-    "colorOptions": [
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "underwear.svg"
   },
@@ -321,14 +491,24 @@
     "category": "Hats",
     "price": 29.99,
     "inventory": 80,
-    "colorOptions": [
-      "Black",
-      "Khaki",
-      "Navy"
-    ],
-    "sizeOptions": [
-      "S/M",
-      "L/XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Black",
+          "Khaki",
+          "Navy"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S/M",
+          "L/XL"
+        ]
+      }
     ],
     "image": "baseball-cap.svg"
   },
@@ -338,16 +518,26 @@
     "category": "T-Shirts",
     "price": 27.99,
     "inventory": 100,
-    "colorOptions": [
-      "White",
-      "Black",
-      "Gray"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "White",
+          "Black",
+          "Gray"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "t-shirt.svg"
   },
@@ -357,16 +547,26 @@
     "category": "Hoodies",
     "price": 39.99,
     "inventory": 75,
-    "colorOptions": [
-      "Gray",
-      "Black",
-      "Blue"
-    ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L",
-      "XL"
+    "options": [
+      {
+        "id": "color",
+        "label": "Color",
+        "values": [
+          "Gray",
+          "Black",
+          "Blue"
+        ]
+      },
+      {
+        "id": "size",
+        "label": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
     ],
     "image": "hoodie.svg"
   }

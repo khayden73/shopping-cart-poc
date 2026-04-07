@@ -7,34 +7,34 @@ export enum Category {
   Hats = "Hats",
 }
 
-export enum SizeOption {
-  XS = "XS",
-  S = "S",
-  M = "M",
-  L = "L",
-  XL = "XL",
-  XXL = "XXL",
-  Size28 = "28",
-  Size30 = "30",
-  Size32 = "32",
-  Size34 = "34",
-  Size36 = "36",
-  OneSize = "One Size",
-  SM = "S/M",
-  LXL = "L/XL",
-}
+// export enum SizeOption {
+//   XS = "XS",
+//   S = "S",
+//   M = "M",
+//   L = "L",
+//   XL = "XL",
+//   XXL = "XXL",
+//   Size28 = "28",
+//   Size30 = "30",
+//   Size32 = "32",
+//   Size34 = "34",
+//   Size36 = "36",
+//   OneSize = "One Size",
+//   SM = "S/M",
+//   LXL = "L/XL",
+// }
 
-export enum ColorOption {
-  White = "White",
-  Black = "Black",
-  Navy = "Navy",
-  Gray = "Gray",
-  Khaki = "Khaki",
-  Red = "Red",
-  Green = "Green",
-  Olive = "Olive",
-  Blue = "Blue",
-}
+// export enum ColorOption {
+//   White = "White",
+//   Black = "Black",
+//   Navy = "Navy",
+//   Gray = "Gray",
+//   Khaki = "Khaki",
+//   Red = "Red",
+//   Green = "Green",
+//   Olive = "Olive",
+//   Blue = "Blue",
+// }
 
 export type Product = {
   productId: string;
@@ -42,13 +42,14 @@ export type Product = {
   category: Category;
   price: number;
   inventory: number;
-  colorOptions: ColorOption[];
-  sizeOptions: SizeOption[];
+  options: ProductOption[];
   image?: string;
 };
 
 export type ProductOption = {
-  [key: string]: string | ColorOption | SizeOption;
+  id: string;
+  label: string;
+  values: string[];
 };
 
 export type CartItem = {

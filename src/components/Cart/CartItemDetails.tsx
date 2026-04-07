@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import type { CartItem, UpdateCartArgs } from "../../lib/types.ts";
+import type { CartItem } from "../../lib/types.ts";
 import styles from "./CartItemDetails.module.css";
 import { Button } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';

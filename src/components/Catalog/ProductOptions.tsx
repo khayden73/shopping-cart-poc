@@ -1,20 +1,21 @@
-import { type ColorOption, SizeOption } from "../../lib/types.ts";
+import type { ProductOption } from "../../lib/types.ts";
 
 interface ProductOptionsProps {
-  label: string;
-  options: string[] | ColorOption[] | SizeOption[];
+  option: ProductOption | undefined;
 }
 
-function ProductOptions({ options, label }: ProductOptionsProps) {
-  if (!options) {
+function ProductOptions({ option }: ProductOptionsProps) {
+  if (!option?.values?.length) {
     return null;
   }
   return (
     <div>
-      <label>{label}: </label>
+      <label>{option.label}: </label>
       <select>
-        {options.map((option) => (
-          <option key={option}>{option}</option>
+        {option.values.map((value) => (
+          <option key={value} value={value}>
+            {value}
+          </option>
         ))}
       </select>
     </div>

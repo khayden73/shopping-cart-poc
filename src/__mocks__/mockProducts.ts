@@ -8,14 +8,17 @@ export const mockProducts: Product[] = [
     category: Category.TShirts,
     price: 10.0,
     inventory: 100,
-    colorOptions: [
-      ColorOption.White,
-      ColorOption.Black,
-    ],
-    sizeOptions: [
-      SizeOption.S,
-      SizeOption.M,
-      SizeOption.L,
+    options: [
+      {
+        id: "color",
+        label: "Color",
+        values: [ColorOption.White, ColorOption.Black],
+      },
+      {
+        id: "size",
+        label: "Size",
+        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+      },
     ],
   },
   {
@@ -24,14 +27,17 @@ export const mockProducts: Product[] = [
     category: Category.Hoodies,
     price: 20.0,
     inventory: 100,
-    colorOptions: [
-      ColorOption.White,
-      ColorOption.Black,
-    ],
-    sizeOptions: [
-      SizeOption.S,
-      SizeOption.M,
-      SizeOption.L,
+    options: [
+      {
+        id: "color",
+        label: "Color",
+        values: [ColorOption.White, ColorOption.Black],
+      },
+      {
+        id: "size",
+        label: "Size",
+        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+      },
     ],
   },
   {
@@ -40,14 +46,17 @@ export const mockProducts: Product[] = [
     category: Category.Pants,
     price: 30.0,
     inventory: 100,
-    colorOptions: [
-      ColorOption.White,
-      ColorOption.Black,
-    ],
-    sizeOptions: [
-      SizeOption.S,
-      SizeOption.M,
-      SizeOption.L,
+    options: [
+      {
+        id: "color",
+        label: "Color",
+        values: [ColorOption.White, ColorOption.Black],
+      },
+      {
+        id: "size",
+        label: "Size",
+        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+      },
     ],
   },
 ];

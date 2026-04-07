@@ -5,7 +5,7 @@ import { ProductOptions } from "./ProductOptions.tsx";
 import styles from "./ProductDetails.module.css";
 import { Quantity } from "./Quantity.tsx";
 import { CartContext } from "../Cart/CartProvider.tsx";
-import type { CartItem, Product } from "../../lib/types.ts";
+import type { Product } from "../../lib/types.ts";
 import { PageContext } from "../Page/PageProvider.tsx";
 
 function ProductDetails() {
@@ -18,7 +18,10 @@ function ProductDetails() {
     catalog.find((product) => product.productId === productId) ||
     ({} as Product);
 
-  const { image } = product;
+  const { image, options } = product;
+  console.log("ProductDetails", { productId, catalog });
+  // const colorOption = options?.find((o) => o.id === "color");
+  // const sizeOption = options?.find((o) => o.id === "size");
   const imagePath = image
     ? `/products/${image}`
     : "/products/no-image-icon-15.png";
@@ -57,8 +60,9 @@ function ProductDetails() {
         <h2>{product?.name}</h2>
         <p>Price: ${product.price}</p>
         <section>
-          <ProductOptions label="colors" options={product.colorOptions} />
-          <ProductOptions label="sizes" options={product.sizeOptions} />
+          {/* <ProductOptions option={colorOption} />
+          <ProductOptions option={sizeOption} /> */}
+          {options.map(productOption => <ProductOptions key={productOption.id} option={productOption} />)}
           <Quantity onChange={(quantity) => setQuantity(quantity)} />
         </section>
         <button onClick={addButtonHandler} className={styles.addToCart}>
