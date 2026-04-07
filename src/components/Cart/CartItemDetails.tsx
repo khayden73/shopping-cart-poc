@@ -42,9 +42,13 @@ function CartItemDetails({ itemId, cartItem }: CartItemDetailsProps) {
           </section>
           <figcaption className={styles.productDetailsContainer}>
             <p>{cartItem.product.name}</p>
-            <p>${cartItem.product.price}</p>
+            <p>price: ${cartItem.product.price}</p>
+            <ul>
+              {cartItem.selectedOptions?.map(opt => <li>{opt.label}: {opt.value}</li>)}
+            </ul>
+
             <Quantity selected={updateQuantity} onChange={(q) => setUpdateQuantity(q)} />
-            <p>Total: ${cartItem.product.price * cartItem.quantity}</p>
+            <p>subtotal: ${cartItem.product.price * cartItem.quantity}</p>
           </figcaption>
         </figure>
       </section>
