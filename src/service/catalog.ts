@@ -1,4 +1,4 @@
-import Catalog from "./products.json";
+import Catalog from "../data/products.json";
 
 export function getCatalog() {
   return new Promise((resolve) => {

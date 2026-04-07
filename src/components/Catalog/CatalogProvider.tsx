@@ -1,7 +1,7 @@
 import { createContext, useEffect, useMemo, useState } from "react";
 // import ProductList from '../../data/products.json';
 import { type Product, type ProductsByCategory } from "../../lib/types.ts";
-import { getCatalog } from "../../data/catalog.ts";
+import { getCatalog } from "../../service/catalog.ts";
 
 interface CatalogProviderProps {
   children: React.ReactNode;

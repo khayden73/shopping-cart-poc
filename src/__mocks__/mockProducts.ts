@@ -1,5 +1,5 @@
 import type { Product } from "../lib/types.ts";
-import { Category, ColorOption, SizeOption } from "../lib/types.ts";
+import { Category } from "../lib/types.ts";
 
 export const mockProducts: Product[] = [
   {
@@ -12,12 +12,12 @@ export const mockProducts: Product[] = [
       {
         id: "color",
         label: "Color",
-        values: [ColorOption.White, ColorOption.Black],
+        values: ["White", "Black"],
       },
       {
         id: "size",
         label: "Size",
-        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+        values: ["S", "M", "L"],
       },
     ],
   },
@@ -31,12 +31,12 @@ export const mockProducts: Product[] = [
       {
         id: "color",
         label: "Color",
-        values: [ColorOption.White, ColorOption.Black],
+        values: ["White", "Black"],
       },
       {
         id: "size",
         label: "Size",
-        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+        values: ["S", "M", "L"],
       },
     ],
   },
@@ -50,12 +50,12 @@ export const mockProducts: Product[] = [
       {
         id: "color",
         label: "Color",
-        values: [ColorOption.White, ColorOption.Black],
+        values: ["White", "Black"],
       },
       {
         id: "size",
         label: "Size",
-        values: [SizeOption.S, SizeOption.M, SizeOption.L],
+        values: ["S", "M", "L"],
       },
     ],
   },
