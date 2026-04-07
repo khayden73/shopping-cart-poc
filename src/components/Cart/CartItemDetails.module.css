@@ -1,7 +1,7 @@
 .cart-item-details-wrapper {
     --flex-direction: row;
     --card-width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
     display: flex;
     flex-direction: var(--flex-direction);
@@ -14,13 +14,13 @@
     border-radius: 8px;
 
     .product-details-wrapper {
-        background-color: orchid;
+        /* background-color: orchid; */
         flex: 1;
     }
 
     .product-thumb-container {
         /* fpo */
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -40,7 +40,7 @@
         }
 
         .product-details-container {
-            background-color: yellow;
+            /* background-color: yellow; */
             /* flex: 0; */
             display: flex;
             flex-direction: column;
