@@ -9,6 +9,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -19,6 +20,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "XS",
         "values": [
           "XS",
           "S",
@@ -41,6 +43,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray",
@@ -50,6 +53,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -70,6 +74,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Khaki",
         "values": [
           "Khaki",
           "Navy",
@@ -79,6 +84,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "28",
         "values": [
           "28",
           "30",
@@ -100,6 +106,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -109,6 +116,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -128,6 +136,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray",
@@ -137,6 +146,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -157,6 +167,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Navy",
@@ -166,6 +177,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "One Size",
         "values": [
           "One Size"
         ]
@@ -183,6 +195,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -192,6 +205,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "XS",
         "values": [
           "XS",
           "S",
@@ -213,6 +227,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Gray",
         "values": [
           "Gray",
           "Black",
@@ -222,6 +237,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -242,6 +258,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Olive",
         "values": [
           "Olive",
           "Khaki",
@@ -251,6 +268,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "30",
         "values": [
           "30",
           "32",
@@ -271,6 +289,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black"
@@ -279,6 +298,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -298,6 +318,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -307,6 +328,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -327,6 +349,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray",
@@ -336,6 +359,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "One Size",
         "values": [
           "One Size"
         ]
@@ -353,6 +377,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -362,6 +387,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -382,6 +408,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray"
@@ -390,6 +417,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -410,6 +438,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray",
@@ -419,6 +448,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "XS",
         "values": [
           "XS",
           "S",
@@ -440,6 +470,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "White"
@@ -448,6 +479,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -467,6 +499,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Gray"
@@ -475,6 +508,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -495,6 +529,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Black",
         "values": [
           "Black",
           "Khaki",
@@ -504,6 +539,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S/M",
         "values": [
           "S/M",
           "L/XL"
@@ -522,6 +558,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "White",
         "values": [
           "White",
           "Black",
@@ -531,6 +568,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",
@@ -551,6 +589,7 @@
       {
         "id": "color",
         "label": "Color",
+        "defaultValue": "Gray",
         "values": [
           "Gray",
           "Black",
@@ -560,6 +599,7 @@
       {
         "id": "size",
         "label": "Size",
+        "defaultValue": "S",
         "values": [
           "S",
           "M",

@@ -30,6 +30,8 @@ const CartContext = createContext<CartContextType>({
 const CartProvider = ({ children }: CartProviderProps) => {
   const [cartItems, setCartItems] = useState<Map<string, CartItem>>(new Map());
 
+  console.info("[CartProvider]", { cartItems });
+
   const addToCart = ({ product, quantity, selectedOptions }: AddToCartArgs) => {
     const cartItem: CartItem = {
       product,

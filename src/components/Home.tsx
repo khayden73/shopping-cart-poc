@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     if (!isLoading && catalog.length > 0) {
       const itemsByCategory = getItemsByCategory();
-      console.info("[Home]", { itemsByCategory });
+      // console.info("[Home]", { itemsByCategory });
       setProductsByCategory(itemsByCategory);
     }
   }, [isLoading, catalog]);

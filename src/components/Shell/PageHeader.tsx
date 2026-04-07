@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 function PageHeader({ children }: PageHeaderProps) {
   const { title, breadcrumbs } = useContext(PageContext);
-  console.info("[PageHeader]", { title, breadcrumbs });
+  // console.info("[PageHeader]", { title, breadcrumbs });
   return (
     <header className={styles.pageHeader}>
       {title && (

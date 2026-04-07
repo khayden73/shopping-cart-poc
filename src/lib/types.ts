@@ -49,13 +49,20 @@ export type Product = {
 export type ProductOption = {
   id: string;
   label: string;
+  defaultValue?: string;
   values: string[];
 };
+
+export type SelectedOption = {
+  id: string;
+  label: string;
+  value: string;
+}
 
 export type CartItem = {
   product: Product;
   quantity: number;
-  selectedOptions?: ProductOption[];
+  selectedOptions?: SelectedOption[];
 };
 
 export type ProductsByCategory = Map<string, Product[]>;
@@ -66,11 +73,11 @@ export type Breadcrumb = { label: string; route?: string };
 export type AddToCartArgs = {
   product: Product;
   quantity: number;
-  selectedOptions: ProductOption[];
+  selectedOptions: SelectedOption[];
 }
 
 export type UpdateCartArgs = {
   itemId: string;
   quantity: number;
-  selectedOptions: ProductOption[];
+  selectedOptions: SelectedOption[];
 }

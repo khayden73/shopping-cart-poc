@@ -32,8 +32,9 @@ const CatalogProvider = ({ children }: CatalogProviderProps) => {
 
   useEffect(() => {
     if (catalog.length === 0) {
+      console.info("[CatalogProvider][useEffect] catalog is empty, fetch catalog");
       getCatalog().then((data) => {
-        console.log({ data });
+        // console.log({ data });
         setCatalog(data as Product[]);
         setIsLoading(false);
         setCategories(getCategories());
@@ -50,7 +51,7 @@ const CatalogProvider = ({ children }: CatalogProviderProps) => {
   };
 
   const getItemsByCategory = (maxPerCategory = 1) => {
-    console.info("[getItemsByCategory]", { catalog });
+    // console.info("[getItemsByCategory]", { catalog });
     if (catalog.length > 0) {
       return catalog.reduce((acc, item) => {
         if (!acc.has(item.category)) {
