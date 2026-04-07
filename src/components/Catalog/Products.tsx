@@ -9,9 +9,9 @@ import { PageContext } from "../Page/PageProvider.tsx";
 function Products() {
   const { catalog, isLoading, getCategories } = useContext(CatalogContext);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
-  const { updateTitle } = useContext(PageContext);
+  const { updateBreadcrumbs } = useContext(PageContext);
 
-  updateTitle("Products");
+  // updateTitle("Products");
   // updateBreadcrumbs([{ label: "Products" }]);
 
   useEffect(() => {
@@ -19,6 +19,11 @@ function Products() {
       setFilteredProducts(catalog);
     }
   }, [catalog, isLoading]);
+
+  useEffect(() => {
+    // updateTitle("Products");
+    updateBreadcrumbs([{ label: "Products" }]);
+  }, []);
 
   if (isLoading) return <p>Loading...</p>;
 

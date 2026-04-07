@@ -79,7 +79,7 @@ function ProductDetails() {
         <img src={imagePath} alt={product.name} />
       </figure>
       <section className={styles.details}>
-        <h2>{product?.name}</h2>
+        <h1>{product?.name}</h1>
         <p>Price: ${product.price}</p>
         <section>
           {/* <ProductOptions option={colorOption} />

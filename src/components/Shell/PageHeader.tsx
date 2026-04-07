@@ -14,7 +14,7 @@ function PageHeader({ children }: PageHeaderProps) {
     <header className={styles.pageHeader}>
       {title && (
         <section className={styles.pageTitle}>
-          <h1>{title}</h1>
+          {/* <h1>{title}</h1> */}
         </section>
       )}
       {breadcrumbs && (

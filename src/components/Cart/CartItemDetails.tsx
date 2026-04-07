@@ -44,7 +44,7 @@ function CartItemDetails({ itemId, cartItem }: CartItemDetailsProps) {
             <p>{cartItem.product.name}</p>
             <p>price: ${cartItem.product.price}</p>
             <ul>
-              {cartItem.selectedOptions?.map(opt => <li>{opt.label}: {opt.value}</li>)}
+              {cartItem.selectedOptions?.map(opt => <li key={opt.id}>{opt.label}: {opt.value}</li>)}
             </ul>
 
             <Quantity selected={updateQuantity} onChange={(q) => setUpdateQuantity(q)} />
